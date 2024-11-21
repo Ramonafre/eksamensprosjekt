@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
-         <link href="ikoner/css/brands.css" rel="stylesheet" />
-         <link href="ikoner/css/solid.css" rel="stylesheet" />
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+         <link href="ikoner/css/brands.css" rel="stylesheet">
+         <link href="ikoner/css/solid.css" rel="stylesheet">
          <link rel="stylesheet" href="css/style.css">
         <title>Forside</title>
     </head>
@@ -38,6 +38,109 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <h1>Kasse</h1>
+            <section>
+                <h2>1. Shoppingbagen din</h2>
+                <article>
+                    <img src="img/produktside-liten.jpg" alt="Produkt">
+                    <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
+                    <h3>Product navn</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Hvit</p>
+                </article>
+                <article>
+                    <img src="img/produktside-liten.jpg" alt="Produkt">
+                    <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
+                    <h3>Product navn</h3>
+                    <p>Kr 1999</p>
+                    <p>Farge: Hvit</p>
+                </article>
+                <article>
+                    <img src="img/Produktside-liten2.jpg" alt="Produkt">
+                    <!--Image by <a href="https://pixabay.com/users/mirkostoedter-20529864/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Mirko Stödter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Pixabay</a>-->
+                    <h3>Product navn</h3>
+                    <p>Kr 1556</p>
+                    <p>Farge: Earthy</p>
+                </article>
+            </section>
+            <section>
+                <h2>2. Dine Opplysninger</h2>
+                <form>
+                    Leveringsadresse
+                    <label>
+                        
+                        <input type="text" name="fornavn" placeholder="Fornavn*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                    </label>
+                    <label>
+                        <input type="text" name="etternavn" placeholder="Etternavn*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                    </label>
+                    <label>
+                        <input type="text" name="gateadresse" placeholder="Gateadresse*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                    </label>
+                    <label>
+                        <input type="number" min="1000" max="9999" name="postnummer" placeholder="Postnummer*" required>
+                    </label>
+                    <label>
+                        <input type="text" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                    </label>
+                    <label>
+                        <input type="submit" value="Lagre">
+                    </label>
+                </form>
+                <a href="#">Avbryt</a>
+            </section>
+            <section>
+                <h2>3. Levering</h2>
+                <form>
+                    <h3>LEVERINGSVALG</h3>
+                    <label>
+                        <input type="radio" name="valg" required>
+                        Expresslevering Hjem
+                    </label>
+                    <label>
+                        <input type="radio" name="valg" required>
+                        Express Pakke til utleveringssted
+                    </label>
+                    <label>
+                        <input type="radio" name="valg" required>
+                        Standard Hjemmelevering
+                    </label>
+                </form>
+            </section>
+            <section>
+                <h2>4. Betaling</h2>
+                <form>
+                    <h3>BETAL MED KORT</h3>
+                    <label>
+                        Kortnummer
+                        <input type="number" min="99999999999999" max="10000000000000" name="kortnummer" placeholder="342342****4435" required>
+                    </label>
+                    <label>
+                        Utløpsdato
+                        <input type="date" name="utløpsdato" required>
+                    </label>
+                    <label>
+                        CVC/CVV 
+                        <input type="text" maxlength="3" name="cvc/cvv" placeholder="CVC/CVV" required>                    
+                    </label>
+                    <p>Å betale inkl. mva.</p>
+                    <p>5 554 kr</p>
+                    <label>
+                        <input type="submit" value="Fullfør kjøp">
+                    </label>
+                    <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                    <label>
+                        <input type="checkbox" required>
+                        Ja, jeg godtar vilkårene
+                    </label>
+                    <label>
+                        <input type="checkbox" required>
+                        Ja takk! Send nyhetsbrev til meg.
+                    </label>
+                </form> 
+            </section>
+        </main>
         <footer>
             <section>
                 <h2>Logo</h2>
