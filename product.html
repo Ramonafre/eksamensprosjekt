@@ -9,6 +9,7 @@
          <link rel="stylesheet" href="css/style.css">
         <title>Produktside</title>
     </head>
+    <div id="grid-container">
     <body>
         <header id="global-header">
             <form>
@@ -21,7 +22,7 @@
                 <ul>
                     <li><a href="index.html">Hjem</a></li>
                     <li><a href="#">Produkter</a></li>
-                    <li><a href="index.html">Logo</a></li>
+                    <li><a href="index.html" id="logo">Logo</a></li>
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt Oss</a></li>
                 </ul>
@@ -39,7 +40,7 @@
             </nav>
         </header>
         <main>
-            <nav>
+            <nav id="brødsmulesti">
                 <ul>
                     <li><a href="#">Hjem></a></li>
                     <li><a href="#">Kategori></a></li>
@@ -61,34 +62,82 @@
                     <a href="#">MERKENAVN</a>
                     <p>1569 kr inkl. mva.</p>
                     <p>Farge: Earthy</p>
+                    <select name="size">
+                        <option value="Velg Størrelse" selected>Velg Størrelse</option>
+                        <option value="small">S</option>
+                        <option value="medium">M</option>
+                        <option value="large">L</option>
+                    </select>
+                    <button>
+                        Legg i Handlekurv
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </article>
             </section>
         </main>
         <aside>
             <h2>Lignende Produkter</h2>
+            <a href="#">
+                Se flere lignende produkter
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
             <article>
                 <img src="img/produktside-liten.jpg" alt="Produkt">
                 <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
                 <h3>Product navn</h3>
                 <p>Kr 1999</p>
+                <section class="stjerne-ikon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </section>
+                <p>1056 Reviews</p>
             </article>
             <article>
                 <img src="img/produktside-liten.jpg" alt="Produkt">
                 <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
                 <h3>Product navn</h3>
                 <p>Kr 1999</p>
+                <section class="stjerne-ikon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </section>
+                <p>1056 Reviews</p>
             </article>
             <article>
                 <img src="img/produktside-liten.jpg" alt="Produkt">
                 <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
                 <h3>Product navn</h3>
                 <p>Kr 1999</p>
+                <section class="stjerne-ikon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </section>
+                <p>1056 Reviews</p>
             </article>
             <article>
                 <img src="img/produktside-liten.jpg" alt="Produkt">
                 <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
                 <h3>Product navn</h3>
                 <p>Kr 1999</p>
+                <section class="stjerne-ikon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </section>
+                <p>1056 Reviews</p>
             </article>
         </aside>
         <footer>
@@ -146,4 +195,5 @@
             </section>
         </footer>
     </body>
+    </div>
 </html>
