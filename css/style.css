@@ -1,10 +1,5 @@
 *{
-    box-sizing: border-box;
-    max-width: 350px;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
+    min-width: 390px;
 }
 
 #grid-container{
@@ -29,33 +24,3 @@ footer{
     grid-row: 3/4;
 }
 
-#global-header{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.søke-container{
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 100px;
-    padding: 5px;
-}
-
-.søkefelt{
-    border: none;
-    outline: none;
-    flex: 1;
-}
-
-.søke-ikon{
-    color: #aaa;
-    margin-left: 5px;
-}
-
-li{
-    list-style: none;
-}
