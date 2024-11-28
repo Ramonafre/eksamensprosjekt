@@ -9,8 +9,8 @@
          <link rel="stylesheet" href="css/style.css">
         <title>Checkout</title>
     </head>
-    <div id="grid-container">
         <body>
+            <div id="grid-container">
             <header id="global-header">
                 <form>
                     <label class="søke-container">
@@ -20,11 +20,11 @@
                 </form>
                 <nav>
                     <ul class="main-menu">
-                        <li><a href="index.html">Hjem</a></li>
-                        <li><a href="index.html#pop-produkt">Produkter</a></li>
-                        <li><a href="index.html" id="logo"><h1>Logo</h1></a></li>
-                        <li><a href="index.html#pop-kategori">Kategorier</a></li>
-                        <li><a href="index.html#kontakt">Kontakt Oss</a></li>
+                        <li class="main-li"><a href="index.html">Hjem</a></li>
+                        <li class="main-li"><a href="index.html#pop-produkt">Produkter</a></li>
+                        <li><a href="index.html" id="main-logo">Logo</a></li>
+                        <li class="main-li"><a href="index.html#pop-kategori">Kategorier</a></li>
+                        <li class="main-li"><a href="index.html#kontakt" class="main-li">Kontakt Oss</a></li>
                     </ul>
                 </nav>
                 <nav>
@@ -42,110 +42,129 @@
             <main>
                 <h1>Kasse</h1>
                 <section id="shoppingbag">
-                    <h2>1. SHOPPINGBAGEN DIN</h2>
-                    <article class="shopping-kort">
-                        <img src="img/produktside-liten.jpg" alt="Produkt">
-                        <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
-                        <section class="produkt-info">
-                            <h3>Product navn</h3>
-                            <p>Kr 1999</p>
-                            <p>Farge: Hvit</p>
-                        </section>
-                        <label for="size">Størrelse</label>
-                        <select id="size" name="size" class="size-check">
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                        </select>
-                        <label>
-                            Antall
-                            <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
-                        </label>
-                        <section class="shopping-ikon">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-trash"></i>
-                        </section>
-                    </article>
-                    <article class="shopping-kort">
-                        <img src="img/produktside-liten.jpg" alt="Produkt">
-                        <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
-                        <section class="produkt-info">
-                            <h3>Product navn</h3>
-                            <p>Kr 1999</p>
-                            <p>Farge: Hvit</p>
-                        </section>
-                        <label for="size">Størrelse</label>
-                        <select name="size" class="size-check">
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                        </select>
-                        <label>
-                            Antall
-                            <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
-                        </label>
-                        <section class="shopping-ikon">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-trash"></i>
-                        </section>
-                    </article>
-                    <article class="shopping-kort">
-                        <img src="img/Produktside-liten2.jpg" alt="Produkt">
-                        <!--Image by <a href="https://pixabay.com/users/mirkostoedter-20529864/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Mirko Stödter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Pixabay</a>-->
-                        <section class="produkt-info">
-                            <h3>Product navn</h3>
-                            <p>Kr 1999</p>
-                            <p>Farge: Hvit</p>
-                        </section>
-                        <label for="size">Størrelse</label>
-                        <select name="size" class="size-check">
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                        </select>
-                        <label>
-                            Antall
-                            <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
-                        </label>
-                        <section class="shopping-ikon">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-solid fa-trash"></i>
-                        </section>
-                    </article>
+                    <section class="shopping-info">
+                        <h2>1. SHOPPINGBAGEN DIN</h2>
+                        <article class="shopping-kort">
+                            <img src="img/produktside-liten.jpg" alt="Produkt">
+                            <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
+                            <section class="shopkort-info">  
+                                <section class="produkt-info">
+                                    <h3>Product navn</h3>
+                                    <p>Kr 1999</p>
+                                    <p>Farge: Hvit</p>
+                                </section>
+                                <label for="size">Størrelse</label>
+                                <select id="size" name="size" class="size-check">
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                </select>
+                                <label>
+                                    Antall
+                                    <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
+                                </label>
+                            </section>
+                            <section class="shopping-ikon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </section>
+                        </article>
+                        <article class="shopping-kort">
+                            <img src="img/produktside-liten.jpg" alt="Produkt">
+                            <!--Image by <a href="https://pixabay.com/users/vassilis-lappas-30046026/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Vassilis lappas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7644257">Pixabay</a>-->
+                            <section class="shopkort-info">  
+                                <section class="produkt-info">
+                                    <h3>Product navn</h3>
+                                    <p>Kr 1999</p>
+                                    <p>Farge: Hvit</p>
+                                </section>
+                                <label for="size">Størrelse</label>
+                                <select id="size" name="size" class="size-check">
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                </select>
+                                <label>
+                                    Antall
+                                    <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
+                                </label>
+                            </section>
+                            <section class="shopping-ikon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </section>
+                        </article>
+                        <article class="shopping-kort">
+                            <img src="img/Produktside-liten2.jpg" alt="Produkt">
+                            <!--Image by <a href="https://pixabay.com/users/mirkostoedter-20529864/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Mirko Stödter</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=6079526">Pixabay</a>-->
+                            <section class="shopkort-info">  
+                                <section class="produkt-info">
+                                    <h3>Product navn</h3>
+                                    <p>Kr 1999</p>
+                                    <p>Farge: Hvit</p>
+                                </section>
+                                <label for="size">Størrelse</label>
+                                <select id="size" name="size" class="size-check">
+                                    <option value="small">S</option>
+                                    <option value="medium">M</option>
+                                    <option value="large">L</option>
+                                </select>
+                                <label>
+                                    Antall
+                                    <input type="number" min="1" max="10" name="antall" placeholder="1" Class="antall-box">
+                                </label>
+                            </section>
+                            <section class="shopping-ikon">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </section>
+                        </article>
+                    </section>
                 </section>
                 <section id="opplysning">
                     <h2>2. DINE OPPLYSNINGER</h2>
                     <form class="adresse-info">
                         Leveringsadresse
-                        <label>
-                            <input type="text" name="fornavn" placeholder="Fornavn*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="fornavn">
-                        </label>
-                        <label>
-                            <input type="text" name="etternavn" placeholder="Etternavn*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="etternavn">
-                        </label>
-                        <label>
-                            <input type="text" name="gateadresse" placeholder="Gateadresse*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="gate">
-                        </label>
-                        <label>
-                            <input type="number" min="1000" max="9999" name="postnummer" placeholder="Postnummer*" required id="postnr">
-                        </label>
-                        <label>
-                            <input type="text" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="poststed">
-                        </label>
+                        <section class="adr-row">
+                            <label class="navn-post">
+                                Fornavn
+                                <input type="text" name="fornavn" placeholder="Nora*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="fornavn">
+                            </label>
+                            <label class="navn-post">
+                                Etternavn
+                                <input type="text" name="etternavn" placeholder="Nordman*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="etternavn">
+                            </label>
+                        </section>
+                        <section class="adr-fullwidth">
+                            <label class="gateadr">
+                                Gateadresse
+                                <input type="text" name="gateadresse" placeholder="BRA veien 4*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="gate">
+                            </label>
+                        </section>
+                        <section class="adr-row">
+                            <label class="navn-post">
+                                Postnummer
+                                <input type="number" min="1000" max="9999" name="1752*" placeholder="Postnummer*" required id="postnr">
+                            </label>
+                            <label class="navn-post">
+                                Poststed
+                                <input type="text" name="poststed" placeholder="Halden*" pattern="[A-Za-zæøåÆØÅ]{2,}" required id="poststed">
+                            </label>
+                        </section>
                     </form>
                     <form class="person-info">
                         Kontaktinformasjon
-                        <label>
+                        <label class="epost-tlf">
                             E-post
                             <input type="email" placeholder="Noranordman@hiof.no" required id="epost">
                         </label>
-                        <label>
+                        <label class="epost-tlf">
                             Telefon
                             <input type="tel" pattern="[0-9]{8,12}" placeholder="+4749***018" required id="tlf">
                         </label>
                     </form>
                     <form class="opplysning-knapper">
-                        <label>
+                        <label class="lagre-width">
                             <input type="submit" value="Lagre" id="lagre-knapp">
                         </label>
                         <a href="#" Id="avbryt-Knapp">Avbryt</a>
@@ -183,20 +202,24 @@
                 </section>
                 <section id="betaling">
                     <h2>4. BETALING</h2>
-                    <form>
+                    <form class="betal-info">
                         <h3>BETAL MED KORT <i class="fa-solid fa-credit-card"></i></h3>
-                        <label>
-                            Kortnummer
-                            <input type="number" min="99999999999999" max="10000000000000" name="kortnummer" placeholder="342342****4435" required id="kort">
-                        </label>
-                        <label>
-                            Utløpsdato
-                            <input type="date" name="utløpsdato" required id="udato">
-                        </label>
-                        <label>
-                            CVC/CVV 
-                            <input type="text" maxlength="3" name="cvc/cvv" placeholder="CVC/CVV" required id="cvc">                    
-                        </label>
+                        <section class="betal-kort">
+                            <label class="kort-full">
+                                Kortnummer
+                                <input type="number" min="99999999999999" max="10000000000000" name="kortnummer" placeholder="342342****4435" required id="kort">
+                            </label>
+                        </section>
+                        <section class="dato-cvc">
+                            <label class="dato-row">
+                                Utløpsdato
+                                <input type="date" name="utløpsdato" required id="udato">
+                            </label>
+                            <label class="dato-row">
+                                CVC/CVV 
+                                <input type="text" maxlength="3" name="cvc/cvv" placeholder="CVC/CVV" required id="cvc">                    
+                            </label>
+                        </section>
                     </form> 
                     <form id="fullfør-kjøp">
                         <p id="abetale">Å betale inkl. mva.</p>
@@ -260,6 +283,6 @@
                     </section>
                 </section>
             </footer>
+            </div>
         </body>
-    </div>
 </html>

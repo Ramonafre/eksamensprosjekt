@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html{
 
 }
@@ -14,6 +18,7 @@ p{
 /*Header*/
 #global-header{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 25px;
@@ -40,14 +45,15 @@ p{
     font-size: 12px;
 }
 
-.main-menu h1{
+#main-logo{
     font-size: 35px;
+    font-weight: bold;
     margin: 0;
 }
 
 .main-menu li, .ikon-menu li{
     list-style: none;
-    padding: 2px;
+    padding: 5px;
 }
 
 .main-menu a, .ikon-menu a{
@@ -58,16 +64,18 @@ p{
 
 .main-menu{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    gap: 1rem;
+    gap: 7px;
     padding: 0;
     margin: 0;
 }
 
 .ikon-menu{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     padding: 0;
     margin: 0;
 }
@@ -77,7 +85,7 @@ p{
 .banner{
     display: flex;
     flex-direction: column;
-    background-color: rgb(180, 148, 148);
+    background-color: rgb(153, 129, 129);
     padding: 45px;
     text-align: right;
     align-items: flex-end;
@@ -162,7 +170,7 @@ img{
 
 
 /*Populære kategorier Forside*/
-#pop-kategori{
+.pop-kategori{
     margin-top: 45px;
 }
 
@@ -170,8 +178,7 @@ img{
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    box-sizing: border-box;
+    gap: 5px;
     
 }
 
@@ -180,12 +187,44 @@ img{
     border-width: 1px;
     padding: 100px 150px;
     font-size: 16px;
-    max-width: 175px;
+    max-width: 390px;
     text-align: center;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+#kategori1{
+    background-image:url(../img/kategori-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#kategori2{
+    background-image:url(../img/kategori-2.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #kategori3{
     padding: 200px 150px;
+    margin: 3px;
+    background-image:url(../img/kategori-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#kategori4{
+    background-image:url(../img/kategori-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#kategori5{
+    background-image:url(../img/kategori-5.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 
@@ -210,15 +249,13 @@ img{
     padding: 10px;
     font-size: 16px;
     border-color: #cfcbcb;
-    max-width: 370px;
+    max-width: 390px;
+    margin: 3px;
     
 }
 .anmeld-kort img{
-    width: 25%;
-    border-radius: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    aspect-ratio: 1/1;
+    width: 45%;
+    border-radius: 12%;
 }
 
 
@@ -328,12 +365,12 @@ img{
 
 .size-prod{
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 4px;
     border-width: 1px;
-    border-color: #b1b1b1;
+    border-color: #e1e1e18a;
     padding: 8px 15px;
     font-size: 12px;
-    background-color: #b6b6b6;
+    background-color: #e1e1e18a;
     max-width: 390px;
 }
 
@@ -347,9 +384,10 @@ img{
     border-style: solid;
     border-width: 1px;
     border-color: #000;
-    padding: 8px 116px;
+    padding: 8px;
     font-size: 12px;
     max-width: 335px;
+    width: 100%;
     color: #ffffff;
     background-color: #000;
 }
@@ -394,6 +432,7 @@ img{
     padding: 15px;
     gap: 2rem;
     margin: 15px;
+    
 }
 
 .shopping-kort img{
@@ -427,7 +466,7 @@ img{
     border-color: #e1e1e1;
     padding: 8px 15px;
     font-size: 12px;
-    max-width: 50px;
+    max-width: 65px;
     
 }
 
@@ -447,6 +486,7 @@ img{
     padding: 20px;
     gap: 2rem;
     margin: 15px;
+    
 }
 
 .adresse-info{
@@ -480,6 +520,10 @@ img{
     gap: 1rem;
 }
 
+.lagre-width{
+    width: 100%;
+}
+
 #lagre-knapp{
     border-style: solid;
     border-width: 1px;
@@ -490,6 +534,7 @@ img{
     color: #ffffff;
     background-color: #464646;
     text-align: center;
+    max-width: 500px;
 }
 
 
@@ -503,6 +548,7 @@ img{
     padding: 20px;
     gap: 1rem;
     margin: 15px;
+    
 }
 
 #express-hjem{
@@ -571,6 +617,22 @@ img{
     padding: 15px;
     gap: 2rem;
     margin: 15px;
+    
+}
+
+.betal-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dato-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.betal-kort{
+    width: 100%;
 }
 
 #kort{
@@ -579,9 +641,19 @@ img{
     border-color: #e6e6e6;
     padding: 10px 15px;
     font-size: 12px;
-    width: 100%;
-    max-width: 270px;   
+    width: 100%;  
+    max-width: 500px; 
 
+}
+
+.dato-cvc{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+
+.dato-row{
+    width: 100%;
 }
 
 #udato{
@@ -591,7 +663,7 @@ img{
     padding: 10px 15px;
     font-size: 12px;
     width: 100%;
-    max-width: 270px;   
+    max-width: 500px;   
 }
 
 #cvc{
@@ -600,8 +672,8 @@ img{
     border-color: #e6e6e6;
     padding: 10px 15px;
     font-size: 12px;
-    width: 100%;
-    max-width: 270px;   
+    max-width: 500px;
+    
 }
 
 #fullfør-kjøp{
@@ -629,6 +701,359 @@ img{
 
 #abetale{
     margin-bottom: 0;
+}
+
+
+
+/*Desktop*/
+@media screen and (min-width: 900px){
+
+    body{
+        margin: 2rem 3rem;
+    }
+
+    #grid-container{
+
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #global-header{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    main{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    footer{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        margin: 2rem 3rem;
+    }
+
+
+    #global-header{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .banner{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        
+     }
+
+     .main-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+     .main-li{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+     }
+
+     .ikon-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+
+     .footer-info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+     
+     #pop-produktkort{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        margin-right: 1rem;
+     }
+
+     .produkt-kort{
+        max-width: 240px;
+        width: 100%;
+     }
+
+     .kategorikort-123{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1px;
+        min-width: 400px;
+        width: 100%;
+        
+     }
+
+
+     .kategorikort-45{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1px;
+        min-width: 400px;
+        width: 100%;
+     }
+
+
+
+     #kategori1, #kategori2, #kategori3{
+        max-width: 386px;
+        width: 100%;
+        padding: 90px;
+        margin: 0;
+        margin-bottom: 0;
+     }
+
+     #kategori4{
+        max-width: 864px;
+        width: 100%;
+        padding: 90px 250px;
+        margin: 0 1px;
+        margin-bottom: 0;
+     }
+
+     #kategori5{
+        max-width: 300px;
+        width: 100%;
+        padding: 90px 60px;
+        margin: 1px 0;
+        margin-bottom: 0;
+     }
+
+
+     #anmeld{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+     }
+
+     .anmeld-kort{
+        max-width: 200px;
+        margin-left: 5px;
+        margin-right: 5px;
+     }
+
+     /*produktside*/
+
+     .hoved-produkt{
+        display: flex;
+        flex-direction: row;
+        gap: 6rem;
+     }
+
+     #hoved-prod-bilde{
+        display: flex;
+        flex-direction: column;
+     }
+
+     #bilde-S{
+        display: flex;
+        flex-direction: row;
+     }
+
+     .prod-stor{
+        max-width: 390px;
+        width: 100%;
+        margin: 3px;
+     }
+
+     .prod-liten{
+        max-width: 126px;
+        width: 100%;
+        margin: 3px;
+     }
+
+     .size-prod{
+        width: 100%;
+     }
+
+
+    .hovedprod-knapp{
+        margin-top: 5px;
+    }
+
+
+    #L-produktkort{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+    /*Checkoutside*/
+
+    #shoppingbag{
+        width: 100%;
+        margin: 10px 0;
+        padding: 40px 100px;
+    }
+
+    .shopping-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    .shopping-kort{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    .shopping-ikon{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .shopping-ikon i{
+        margin: 0;
+    }
+
+    #opplysning{
+        width: 100%;
+        padding: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        padding: 40px 100px;
+    }
+
+    .adresse-info{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .adr-row{
+        display: flex;
+        gap: 5px;
+    }
+    
+    .navn-post{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    #gateadr{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #gate, #epost, #tlf{
+        max-width: 500px;
+    }
+
+    .person-info{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .epost-tlf{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .lagre-width{
+        width: 100%;
+    }
+    
+    #lagre-knapp{
+        max-width: 500px;
+    }
+
+    #levering{
+        width: 100%;
+        margin: 10px 0;
+        padding: 40px 100px;
+    }
+
+    #levering h2{
+        display: flex;
+        align-items: center;
+    }
+
+    #betaling{
+        width: 100%;
+        margin: 10px 0;
+        padding: 40px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .betal-info{
+        max-width: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .betal-kort{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+    }
+
+    .kort-full{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dato-cvc{
+        display: flex;
+        gap: 5px;
+    }
+
+    .dato-row{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    #udato, #cvc, #kort{
+        max-width: 500px;
+    }
+
+    
+
 }
 
 
