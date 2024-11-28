@@ -90,7 +90,7 @@ p{
     text-align: right;
     align-items: flex-end;
     gap: 1rem;
-    max-width: 370px;
+    max-width: 390px;
     margin: 0;
 }
 
@@ -139,7 +139,7 @@ p{
 
 /*Produkt kort for både forside og produktside*/
 .produkt-kort{
-    max-width: 350px;
+    max-width: 390px;
     min-width: 200px;
     width: 100%;
     box-shadow: 10px 10px 10px 10px #efefef;
@@ -191,6 +191,8 @@ img{
     text-align: center;
     box-sizing: border-box;
     margin: 3px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
 }
 
 #kategori1{
@@ -209,6 +211,8 @@ img{
 #kategori3{
     padding: 200px 150px;
     margin: 3px;
+    color: #ffffff;
+    text-shadow: 4px 4px 4px #000;
     background-image:url(../img/kategori-3.jpg);
     background-size: cover;
     background-position: center;
@@ -304,6 +308,11 @@ img{
     margin: 0;
 }
 
+#snarveier a{
+    text-decoration: none;
+    color: #000;
+}
+
 #snarveier h3{
     font-weight: normal;
     margin-bottom: 5px;
@@ -372,6 +381,8 @@ img{
     font-size: 12px;
     background-color: #e1e1e18a;
     max-width: 390px;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 .hovedprod-knapp{
@@ -409,6 +420,7 @@ img{
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
+    gap: 1rem;
 }
 
 .Lprodukter h2{
@@ -510,7 +522,7 @@ img{
     padding: 10px 15px;
     font-size: 12px;
     width: 100%;
-    max-width: 270px;
+    max-width: 900px;
 }
 
 .opplysning-knapper{
@@ -534,7 +546,7 @@ img{
     color: #ffffff;
     background-color: #464646;
     text-align: center;
-    max-width: 500px;
+    max-width: 900px;
 }
 
 
@@ -551,6 +563,12 @@ img{
     
 }
 
+.levering-valg{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 #express-hjem{
     display: flex;
     flex-direction: column;
@@ -558,7 +576,6 @@ img{
     border-width: 1px;
     border-color: #ebe6e6;
     padding: 15px;
-    gap: 5px;
     margin: 0;
 }
 
@@ -642,7 +659,7 @@ img{
     padding: 10px 15px;
     font-size: 12px;
     width: 100%;  
-    max-width: 500px; 
+    max-width: 900px; 
 
 }
 
@@ -663,7 +680,7 @@ img{
     padding: 10px 15px;
     font-size: 12px;
     width: 100%;
-    max-width: 500px;   
+    max-width: 900px;   
 }
 
 #cvc{
@@ -685,6 +702,11 @@ img{
     text-align: center;
     
 
+}
+
+#total-pris{
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #fullfør-knapp{
@@ -728,6 +750,7 @@ img{
         grid-column: 2/3;
         grid-row: 2/3;
         width: 100%;
+        min-width: 800px;
     }
 
     footer{
@@ -786,6 +809,7 @@ img{
         flex-wrap: wrap;
         margin-left: 1rem;
         margin-right: 1rem;
+        
      }
 
      .produkt-kort{
@@ -798,7 +822,7 @@ img{
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 1px;
+        gap: 3px;
         min-width: 400px;
         width: 100%;
         
@@ -810,9 +834,10 @@ img{
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        gap: 1px;
+        gap: 3px;
         min-width: 400px;
         width: 100%;
+        margin-top: 2px;
      }
 
 
@@ -823,6 +848,8 @@ img{
         padding: 90px;
         margin: 0;
         margin-bottom: 0;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px #000;
      }
 
      #kategori4{
@@ -831,6 +858,8 @@ img{
         padding: 90px 250px;
         margin: 0 1px;
         margin-bottom: 0;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px #000;
      }
 
      #kategori5{
@@ -839,6 +868,8 @@ img{
         padding: 90px 60px;
         margin: 1px 0;
         margin-bottom: 0;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px #000;
      }
 
 
@@ -850,7 +881,7 @@ img{
      }
 
      .anmeld-kort{
-        max-width: 200px;
+        max-width: 289px;
         margin-left: 5px;
         margin-right: 5px;
      }
@@ -863,9 +894,14 @@ img{
         gap: 6rem;
      }
 
-     #hoved-prod-bilde{
+     .hoved-bilder{
         display: flex;
         flex-direction: column;
+        max-width: 700px;
+     }
+
+     #produkt-info{
+        max-width: 440px;
      }
 
      #bilde-S{
@@ -993,8 +1029,8 @@ img{
         width: 100%;
     }
     
-    #lagre-knapp{
-        max-width: 500px;
+    .opplysning-knapper{
+        width: 100%;
     }
 
     #levering{
@@ -1005,6 +1041,7 @@ img{
 
     #levering h2{
         display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
